@@ -4,7 +4,7 @@ import FeaturedWorks from "./components/FeaturedWorks.jsx";
 import Footer from "./components/Footer.jsx";
 import ConstructionSlider from "./components/Hero.jsx";
 import HomeFeatures from "./components/HomeFeature.jsx";
-import Testimonials from "./components/testimonials.jsx";
+import Testimonials from "./components/Testimonials.jsx";
 import WhatWeDo from "./components/Whatwedo.jsx";
 
 function App() {
