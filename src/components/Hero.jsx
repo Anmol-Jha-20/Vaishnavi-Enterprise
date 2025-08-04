@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, MapPin, Star, Mail } from "lucide-react";
-import Logo from "../assets/logoVashnavi.jpeg";
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import Header from "./Header/Header.jsx";
 import ConstructionWorkImage from "../assets/constructionwork.webp";

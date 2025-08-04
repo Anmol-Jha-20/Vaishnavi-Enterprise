@@ -410,7 +410,7 @@
 import { useState } from "react";
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { MapPin, Star, Mail, Menu, X } from "lucide-react";
-import Logo from "../../assets/logoVashnavi.jpeg"; // Update path as needed
+import Logo from "../../assets/logoVashnavi.png"; // Update path as needed
 
 const menuItems = [
   {
@@ -494,7 +494,7 @@ const Header = () => {
   };
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 bg-[#323232]/10">
+    <header className="absolute top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -502,7 +502,7 @@ const Header = () => {
             <img
               src={Logo}
               alt="Logo"
-              className="w-20 h-20 rounded-lg object-cover"
+              className="h-20 bg-white rounded-lg object-cover"
             />
           </div>
 
