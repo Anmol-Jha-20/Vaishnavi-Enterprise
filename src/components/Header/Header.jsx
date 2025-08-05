@@ -415,68 +415,65 @@ import Logo from "../../assets/logoVashnavi.png"; // Update path as needed
 const menuItems = [
   {
     title: "Home",
+    subMenu: [],
+  },
+  {
+    title: "About",
+    subMenu: [],
+  },
+  // {
+  //   title: "Projects",
+  //   subMenu: [
+  //     {
+  //       title: "Electronics",
+  //       subItems: ["Laptops", "Mobiles"],
+  //     },
+  //     {
+  //       title: "Furniture",
+  //       subItems: ["Chairs", "Tables"],
+  //     },
+  //   ],
+  // },
+  {
+    title: "Services",
     subMenu: [
       {
-        title: "3 Columns",
-        subItems: ["With Space", "Without Space"],
+        title: "Construction Services",
+        subItems: [],
       },
       {
-        title: "Project Full Width",
+        title: "Industrial Roofing service",
+        subItems: [],
+      },
+      {
+        title: "Factory contruction service",
+        subItems: [],
+      },
+      {
+        title: "T.B service",
+        subItems: [],
+      },
+      {
+        title: "Waterproofing Service",
+        subItems: [],
+      },
+      {
+        title: "Residental Building construction service",
+        subItems: [],
+      },
+      {
+        title: "Resort Construction Service",
         subItems: [],
       },
     ],
   },
   {
-    title: "About",
-    subMenu: [
-      {
-        title: "Electronics",
-        subItems: ["Laptops", "Mobiles"],
-      },
-      {
-        title: "Furniture",
-        subItems: ["Chairs", "Tables"],
-      },
-    ],
-  },
-  {
-    title: "Projects",
-    subMenu: [
-      {
-        title: "Electronics",
-        subItems: ["Laptops", "Mobiles"],
-      },
-      {
-        title: "Furniture",
-        subItems: ["Chairs", "Tables"],
-      },
-    ],
-  },
-  {
-    title: "Services",
-    subMenu: [
-      {
-        title: "Electronics",
-        subItems: ["Laptops", "Mobiles"],
-      },
-      {
-        title: "Furniture",
-        subItems: ["Chairs", "Tables"],
-      },
-    ],
+    title: "Gallery",
+    subItems: [],
   },
   {
     title: "Contact",
-    subMenu: [
-      {
-        title: "Electronics",
-        subItems: ["Laptops", "Mobiles"],
-      },
-      {
-        title: "Furniture",
-        subItems: ["Chairs", "Tables"],
-      },
-    ],
+    subItems: [],
   },
 ];
 
@@ -494,7 +491,7 @@ const Header = () => {
   };
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50">
+    <header className="absolute top-0 bg-white/20 left-0 right-0 z-50">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -556,37 +553,41 @@ const Header = () => {
               </button>
 
               {/* First Level Dropdown */}
-              {hoveredMenu === item.title && (
-                <div className="absolute top-full left-0 bg-white text-black min-w-[200px] shadow-md z-50">
-                  {item.subMenu.map((sub, subIdx) => (
-                    <div
-                      key={subIdx}
-                      className="relative"
-                      onMouseEnter={() => setHoveredSubMenu(sub.title)}
-                      onMouseLeave={() => setHoveredSubMenu(null)}
-                    >
-                      <div className="px-4 py-2 hover:bg-orange-100 cursor-pointer whitespace-nowrap">
-                        {sub.title}
-                      </div>
+              {Array.isArray(item.subMenu) &&
+                item.subMenu.length > 0 &&
+                hoveredMenu === item.title && (
+                  <div className="absolute top-full left-0 bg-white text-black min-w-[200px] shadow-md z-50">
+                    {item.subMenu.map((sub, subIdx) => (
+                      <div
+                        key={subIdx}
+                        className="relative"
+                        onMouseEnter={() => setHoveredSubMenu(sub.title)}
+                        onMouseLeave={() => setHoveredSubMenu(null)}
+                      >
+                        <div className="px-4 py-2 hover:bg-orange-100 cursor-pointer whitespace-nowrap">
+                          {sub.title}
+                        </div>
 
-                      {/* Second Level Dropdown */}
-                      {hoveredSubMenu === sub.title &&
-                        sub.subItems.length > 0 && (
-                          <div className="absolute left-full top-0 bg-white min-w-[180px] shadow-lg">
-                            {sub.subItems.map((subItem, idx) => (
-                              <div
-                                key={idx}
-                                className="px-4 py-2 hover:bg-orange-100 cursor-pointer whitespace-nowrap"
-                              >
-                                {subItem}
-                              </div>
-                            ))}
-                          </div>
-                        )}
-                    </div>
-                  ))}
-                </div>
-              )}
+                        {/* Second Level Dropdown */}
+                        {Array.isArray(item.subMenu) &&
+                          item.subMenu.length > 0 &&
+                          hoveredSubMenu === sub.title &&
+                          sub.subItems.length > 0 && (
+                            <div className="absolute left-full top-0 bg-white min-w-[180px] shadow-lg">
+                              {sub.subItems.map((subItem, idx) => (
+                                <div
+                                  key={idx}
+                                  className="px-4 py-2 hover:bg-orange-100 cursor-pointer whitespace-nowrap"
+                                >
+                                  {subItem}
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                      </div>
+                    ))}
+                  </div>
+                )}
             </div>
           ))}
 
@@ -630,30 +631,34 @@ const Header = () => {
                   {item.title}
                 </button>
 
-                {expandedMobileMenu[item.title] && (
-                  <div className="ml-4 space-y-1 text-base text-gray-200 pt-2">
-                    {item.subMenu.map((sub, subIdx) => (
-                      <div key={subIdx}>
-                        <button
-                          className="w-full text-left py-1"
-                          onClick={() => toggleMobileMenu(sub.title)}
-                        >
-                          {sub.title}
-                        </button>
+                {Array.isArray(item.subMenu) &&
+                  item.subMenu.length > 0 &&
+                  expandedMobileMenu[item.title] && (
+                    <div className="ml-4 space-y-1 text-base text-gray-200 pt-2">
+                      {item.subMenu.map((sub, subIdx) => (
+                        <div key={subIdx}>
+                          <button
+                            className="w-full text-left py-1"
+                            onClick={() => toggleMobileMenu(sub.title)}
+                          >
+                            {sub.title}
+                          </button>
 
-                        {expandedMobileMenu[sub.title] && (
-                          <div className="ml-4 pl-2 text-sm text-gray-400 space-y-1">
-                            {sub.subItems.map((subItem, i) => (
-                              <div key={i} className="py-0.5">
-                                {subItem}
+                          {Array.isArray(sub.subItems) &&
+                            sub.subItems.length > 0 &&
+                            expandedMobileMenu[sub.title] && (
+                              <div className="ml-4 pl-2 text-sm text-gray-400 space-y-1">
+                                {sub.subItems.map((subItem, i) => (
+                                  <div key={i} className="py-0.5">
+                                    {subItem}
+                                  </div>
+                                ))}
                               </div>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                )}
+                            )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
               </div>
             ))}
 
