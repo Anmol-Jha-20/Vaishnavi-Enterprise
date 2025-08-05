@@ -1,21 +1,11 @@
 import "./App.css";
-import ConstructionDesign from "./components/Constructiondesign.jsx";
-import FeaturedWorks from "./components/FeaturedWorks.jsx";
 import Footer from "./components/Footer.jsx";
-import ConstructionSlider from "./components/Hero.jsx";
-import HomeFeatures from "./components/HomeFeature.jsx";
-import Testimonials from "./components/Testimonials.jsx";
-import WhatWeDo from "./components/Whatwedo.jsx";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <ConstructionSlider />
-      <HomeFeatures />
-      {/* <FeaturedWorks /> */}
-      <WhatWeDo />
-      <ConstructionDesign />
-      <Testimonials />
+      <Outlet />
       <Footer />
     </>
   );

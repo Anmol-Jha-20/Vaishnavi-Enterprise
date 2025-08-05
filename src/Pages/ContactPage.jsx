@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "../components/Header/Header";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -27,9 +28,10 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Header />
       {/* Hero Section */}
       <div
-        className="relative h-80 bg-cover bg-center flex items-center justify-center"
+        className="relative h-96 bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`,
         }}
@@ -38,7 +40,7 @@ const ContactPage = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             GET IN TOUCH WITH US.
           </h1>
-          <p className="text-lg md:text-xl">Contact The Construction Company</p>
+          {/* <p className="text-lg md:text-xl">Contact The Construction Company</p> */}
         </div>
       </div>
 
@@ -54,9 +56,11 @@ const ContactPage = () => {
               <div className="w-16 h-1 bg-yellow-500 mb-6"></div>
 
               <p className="text-gray-600 mb-8">
-                Call or submit our online form to request an estimate or for
-                general questions about U.S. Certified Contractors and our
-                services. We look forward to serving you!
+                Contact us today by phone or through our online form to request
+                a quote or for any general inquiries about Vaishnavi Enterprise
+                and the range of services we offer, including Roof Fabrication,
+                Industrial Maintenance, and Construction Work. We look forward
+                to working with you!
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -164,9 +168,11 @@ const ContactPage = () => {
                 CONTACT INFO
               </h3>
               <div className="space-y-3">
-                <p className="text-gray-600">+91 (123) 456-7890</p>
-                <p className="text-yellow-500">contact@construction.com</p>
-                <p className="text-yellow-500">@construction_llc</p>
+                <p className="text-gray-600">+91 95289 82125</p>
+                <p className="text-yellow-500">
+                  Vaishnavienterprises4298@gmail.com
+                </p>
+                {/* <p className="text-yellow-500">@construction_llc</p> */}
               </div>
             </div>
 
@@ -174,7 +180,7 @@ const ContactPage = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-80">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.8234567890123!2d77.8234567!3d29.8234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sLaksar%2C%20Uttarakhand%20247663!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.253133243085!2d78.0155499!3d29.741386400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390953d46ef85c4d%3A0x60cd02ded8bc1c11!2sVaishnavi%20enterprise!5e0!3m2!1sen!2sin!4v1754393081656!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -196,13 +202,23 @@ const ContactPage = () => {
                       Haridwar-247663, Uttarakhand, India
                     </p>
                   </div>
-                  <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                  <a
+                    href="https://www.google.com/maps/dir//Vaishnavi+enterprise,+Atithi+nagar+colony,+Shekhpuri,+Laksar,+Uttarakhand+247663/@29.741386,78.01555,16z/data=!4m17!1m7!3m6!1s0x390953d46ef85c4d:0x60cd02ded8bc1c11!2sVaishnavi+enterprise!8m2!3d29.7413864!4d78.0155499!16s%2Fg%2F11y67vmc_6!4m8!1m0!1m5!1m1!1s0x390953d46ef85c4d:0x60cd02ded8bc1c11!2m2!1d78.0155499!2d29.7413864!3e2?hl=en&entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                  >
                     Directions
-                  </button>
+                  </a>
                 </div>
-                <button className="text-blue-600 hover:text-blue-800 text-sm font-medium mt-2">
+                <a
+                  href="https://www.google.com/maps/place/Vaishnavi+enterprise/@29.741386,78.01555,16z/data=!4m6!3m5!1s0x390953d46ef85c4d:0x60cd02ded8bc1c11!8m2!3d29.7413864!4d78.0155499!16s%2Fg%2F11y67vmc_6?hl=en&entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 text-sm font-medium mt-2 inline-block"
+                >
                   View larger map
-                </button>
+                </a>
               </div>
             </div>
           </div>

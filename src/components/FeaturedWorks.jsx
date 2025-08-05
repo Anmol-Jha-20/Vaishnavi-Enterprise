@@ -19,32 +19,37 @@ const projects = [
   {
     title: "Maintenance Service",
     category: "Interior Design",
-    img: "https://5.imimg.com/data5/SELLER/Default/2024/12/474396640/NR/JP/KV/93162307/industrial-maintenance-service-250x250.jpg",
+    img: "https://lh3.googleusercontent.com/p/AF1QipOa1dTdGdQItX54GGP0g4niOfXFA0Cy9lBiDt_2=s680-w680-h510-rw",
   },
   {
     title: "Structural Fabrication Service",
     category: "Office",
-    img: "https://5.imimg.com/data5/SELLER/Default/2024/12/474396026/FQ/NV/OG/93162307/peb-structures-fabrication-service-250x250.jpg",
+    img: "https://lh3.googleusercontent.com/p/AF1QipND9Lp_gLh_gVzw3Xaf7zI86iKEIua4RzbSx-Mr=s680-w680-h510-rw",
   },
   {
     title: "Waterproofing Service",
     category: "Interior Design",
-    img: "https://5.imimg.com/data5/SELLER/Default/2024/12/474399201/XS/NM/QC/93162307/roof-waterproofing-services-250x250.jpg",
+    img: "https://lh3.googleusercontent.com/p/AF1QipN43sCt6gEX5HmWBuW19RGzijjRUFrFa-I1jlrG=s680-w680-h510-rw",
   },
   {
     title: "Roofing Service",
     category: "Healthcare",
-    img: "https://5.imimg.com/data5/SELLER/Default/2024/12/474399608/OZ/GN/TN/93162307/industrial-roofing-services-250x250.jpg",
+    img: "https://lh3.googleusercontent.com/p/AF1QipMVQk7Uxd_wNDMqCLKirCGjFkNUnnwIjDGvnvvm=s680-w680-h510-rw",
   },
   {
     title: "Organic Jaggery",
     category: "Green Building",
-    img: "https://5.imimg.com/data5/IOS/Default/2025/4/506602094/VO/CS/FN/93162307/product-jpeg-250x250.png",
+    img: "https://lh3.googleusercontent.com/p/AF1QipMiq769S1ltpzyWcTCt5aD7G7KC-sT-DBy_vcvi=s680-w680-h510-rw",
   },
   {
     title: "jaggery",
     category: "Education",
-    img: "https://5.imimg.com/data5/IOS/Default/2025/4/506601102/GO/FF/CK/93162307/product-jpeg-250x250.png",
+    img: "https://lh3.googleusercontent.com/p/AF1QipNZjKLd_BODP8nsQmlMkweCKbcpB8mJbGpQqKOV=s680-w680-h510-rw",
+  },
+  {
+    title: "jaggery",
+    category: "Education",
+    img: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noRInt0QwX6fJEa_F8gqUf6gC4qDpJzHL-EUaAhfYtFnTR-MmVlb6NfJYJWKip-Lvb1Ynriq_7zWqnGsstb522dKUXk8BaFFTuUDXVRNbDrJru0vFs9D-qvo67Y_4i77TYux2L-=s680-w680-h510-rw",
   },
   // {
   //   title: "Smart Office Space",
@@ -55,11 +60,11 @@ const projects = [
 
 const FeaturedWorks = () => {
   return (
-    <section className="bg-gray-900 py-12">
+    <section className="bg-white py-12">
       <div className="max-w-screen-xl mx-auto px-4">
-        <h2 className="text-center text-white text-3xl font-bold mb-4">
+        {/* <h2 className="text-center text-white text-3xl font-bold mb-4">
           Our Services
-        </h2>
+        </h2> */}
         {/* <div className="text-center text-gray-300 space-x-4 mb-10">
           <span className="text-yellow-400 font-semibold">Filter - All</span>
           {categories.slice(1).map((cat, idx) => (
