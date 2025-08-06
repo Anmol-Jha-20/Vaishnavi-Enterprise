@@ -239,7 +239,7 @@ const Header = () => {
                             className="w-full text-left py-1"
                             onClick={() => toggleMobileMenu(sub.title)}
                           >
-                            {sub.title}
+                            <a href={sub.link}>{sub.title}</a>
                           </button>
 
                           {Array.isArray(sub.subItems) &&

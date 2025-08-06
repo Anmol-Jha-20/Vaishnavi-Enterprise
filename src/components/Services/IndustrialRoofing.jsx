@@ -50,9 +50,9 @@ export default function IndustrialRoofingServices() {
   ];
 
   const stats = [
-    { number: "1000+", label: "Projects Completed", icon: Building },
+    { number: "100+", label: "Projects Completed", icon: Building },
     { number: "5+", label: "Years Experience", icon: Clock },
-    { number: "500+", label: "Happy Clients", icon: Users },
+    { number: "100+", label: "Happy Clients", icon: Users },
     { number: "24/7", label: "Support", icon: Phone },
   ];
 
@@ -300,11 +300,11 @@ export default function IndustrialRoofingServices() {
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 text-white">
             <div className="flex items-center space-x-2">
               <MapPin className="h-5 w-5" />
-              <span>Gurugram, Haryana</span>
+              <span> Uttarakhand, India</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="h-5 w-5" />
-              <span>info@vaishnavienterprise.com</span>
+              <span>Vaishnavienterprises4298@gmail.com</span>
             </div>
             <div className="flex items-center space-x-2">
               <Clock className="h-5 w-5" />
