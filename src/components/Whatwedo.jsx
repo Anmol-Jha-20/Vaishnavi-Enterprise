@@ -119,7 +119,7 @@ const services = [
     link: "/waterproffing-service",
   },
   {
-    title: "Residental Building construction service",
+    title: "Residential Building construction service",
     image:
       "https://img.freepik.com/free-photo/civil-engineer-construction-worker-manager-holding-digital-tablet-blueprints-talking-planing-about-construction-site-cooperation-teamwork-concept_640221-156.jpg?t=st=1754307552~exp=1754311152~hmac=0a717e9a85306b74444666f4e2d3bfa0fc36995ccdfe165f64f783e935a540d2&w=1060",
     description:
