@@ -15,7 +15,7 @@ const ConstructionSlider = () => {
         "url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
       title: "WELCOME",
       subtitle: "CREATING A BRIGHTER FUTURE, TOGETHER",
-      buttonText: "FEATURED PROJECTS",
+      buttonText: "OUR SERVICES",
       buttonColor: "bg-orange-500 hover:bg-orange-600",
     },
     {
@@ -99,7 +99,13 @@ const ConstructionSlider = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <button
-                    className={`px-8 py-3 ${slide.buttonColor} text-white font-semibold text-lg transition-all duration-300 transform hover:scale-105`}
+                    onClick={() => {
+                      const section = document.getElementById("services");
+                      if (section) {
+                        section.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
+                    className={`px-8 py-3 ${slide.buttonColor} cursor-pointer text-white font-semibold text-lg transition-all duration-300 transform hover:scale-105`}
                   >
                     {slide.buttonText} →
                   </button>

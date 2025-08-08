@@ -161,7 +161,7 @@ const WhatWeDo = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="py-12 bg-white">
+    <section id="services" className="py-12 bg-white">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="flex justify-between items-center mb-8">
           <div>

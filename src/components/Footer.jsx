@@ -5,7 +5,9 @@ import {
   FaLinkedinIn,
   FaInstagram,
   FaPinterestP,
+  FaWhatsapp,
 } from "react-icons/fa";
+import { MdCall, MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -53,6 +55,43 @@ const Footer = () => {
           </ul>
         </div>
 
+        <div className="fixed bottom-6 left-0 z-50">
+          <button
+            onClick={() =>
+              window.open(
+                "https://wa.me/919528982125?text=Hey!%20I%20am%20interested%20in%20your%20services.",
+                "_blank"
+              )
+            }
+            className="bg-green-600 hover:bg-green-700 cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
+            aria-label="Need Help?"
+          >
+            <FaWhatsapp size={24} />
+          </button>
+        </div>
+        <div className="fixed bottom-6 right-0 z-50">
+          <button
+            onClick={() => (window.location.href = "tel:9528982125")}
+            className="bg-[#1C398E] cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
+            aria-label="Need Help?"
+          >
+            <MdCall size={24} />
+          </button>
+        </div>
+
+        <div className="fixed bottom-28 right-0 z-50">
+          <button
+            onClick={() =>
+              (window.location.href =
+                "mailto:Vaishnavienterprises4298@gmail.com")
+            }
+            className="bg-[#1C398E] cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
+            aria-label="Email Us"
+          >
+            <MdEmail size={24} />
+          </button>
+        </div>
+
         {/* Office Info */}
         <div>
           <h3 className="font-bold uppercase mb-2">Construction Office</h3>
@@ -63,7 +102,6 @@ const Footer = () => {
             </li>
             <li>95289 82125</li>
             <li>Vaishnavienterprises4298@gmail.com</li>
-            {/* <li>FAX: (123) 123-4567</li> */}
           </ul>
         </div>
 

@@ -362,9 +362,6 @@ const FactoryConstructionPage = () => {
             <button className="bg-white text-yellow-600 cursor-pointer hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-colors duration-300 shadow-lg">
               Contact Us Today
             </button>
-            {/* <button className="border-2 border-white text-white hover:bg-white hover:text-yellow-600 px-8 py-4 rounded-lg font-semibold transition-colors duration-300">
-              Contact Us Today
-            </button> */}
           </div>
         </div>
       </section>

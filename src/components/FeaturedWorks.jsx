@@ -1,5 +1,12 @@
 import React from "react";
 import ConstructionWorkImage from "../assets/constructionwork.webp";
+import ImageOne from "../assets/image1.webp";
+import ImageTwo from "../assets/image2.webp";
+import ImageThree from "../assets/image3.webp";
+import ImageFour from "../assets/image4.webp";
+import ImageFive from "../assets/image5.webp";
+import ImageSix from "../assets/image6.webp";
+import ImageSeven from "../assets/image7.webp";
 
 const categories = [
   "All",
@@ -19,43 +26,38 @@ const projects = [
   {
     title: "Maintenance Service",
     category: "Interior Design",
-    img: "https://lh3.googleusercontent.com/p/AF1QipOa1dTdGdQItX54GGP0g4niOfXFA0Cy9lBiDt_2=s680-w680-h510-rw",
+    img: ImageOne,
   },
   {
     title: "Structural Fabrication Service",
     category: "Office",
-    img: "https://lh3.googleusercontent.com/p/AF1QipND9Lp_gLh_gVzw3Xaf7zI86iKEIua4RzbSx-Mr=s680-w680-h510-rw",
+    img: ImageTwo,
   },
   {
     title: "Waterproofing Service",
     category: "Interior Design",
-    img: "https://lh3.googleusercontent.com/p/AF1QipN43sCt6gEX5HmWBuW19RGzijjRUFrFa-I1jlrG=s680-w680-h510-rw",
+    img: ImageThree,
   },
   {
     title: "Roofing Service",
     category: "Healthcare",
-    img: "https://lh3.googleusercontent.com/p/AF1QipMVQk7Uxd_wNDMqCLKirCGjFkNUnnwIjDGvnvvm=s680-w680-h510-rw",
+    img: ImageFour,
   },
   {
     title: "Organic Jaggery",
     category: "Green Building",
-    img: "https://lh3.googleusercontent.com/p/AF1QipMiq769S1ltpzyWcTCt5aD7G7KC-sT-DBy_vcvi=s680-w680-h510-rw",
+    img: ImageFive,
   },
   {
     title: "jaggery",
     category: "Education",
-    img: "https://lh3.googleusercontent.com/p/AF1QipNZjKLd_BODP8nsQmlMkweCKbcpB8mJbGpQqKOV=s680-w680-h510-rw",
+    img: ImageSix,
   },
   {
     title: "jaggery",
     category: "Education",
-    img: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noRInt0QwX6fJEa_F8gqUf6gC4qDpJzHL-EUaAhfYtFnTR-MmVlb6NfJYJWKip-Lvb1Ynriq_7zWqnGsstb522dKUXk8BaFFTuUDXVRNbDrJru0vFs9D-qvo67Y_4i77TYux2L-=s680-w680-h510-rw",
+    img: ImageSeven,
   },
-  // {
-  //   title: "Smart Office Space",
-  //   category: "Office",
-  //   img: "https://wpcharming.com/construction/wp-content/uploads/sites/8/2015/02/House1-600x300.jpg",
-  // },
 ];
 
 const FeaturedWorks = () => {
@@ -82,7 +84,7 @@ const FeaturedWorks = () => {
                 alt={project.title}
                 className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <h3 className="text-white font-bold text-lg px-2">
                   {project.title}
                 </h3>
@@ -92,7 +94,7 @@ const FeaturedWorks = () => {
                 <button className="bg-yellow-500 text-white px-4 py-1 rounded font-medium hover:bg-yellow-600">
                   Read More
                 </button>
-              </div>
+              </div> */}
             </article>
           ))}
         </div>
