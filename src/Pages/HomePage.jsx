@@ -4,6 +4,7 @@ import HomeFeatures from "../components/HomeFeature.jsx";
 import WhatWeDo from "../components/Whatwedo.jsx";
 import ConstructionDesign from "../components/Constructiondesign.jsx";
 import Testimonials from "../components/Testimonials.jsx";
+import OurClients from "../components/OurClients.jsx";
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <WhatWeDo />
       <ConstructionDesign />
       <Testimonials />
+      <OurClients />
     </>
   );
 }
