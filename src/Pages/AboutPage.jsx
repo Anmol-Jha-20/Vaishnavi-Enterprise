@@ -45,19 +45,19 @@ const AboutPage = () => {
 
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                  nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id
-                  est laborum.
+                  Established and GST-registered in 2019, Vaishnavi Enterprise
+                  has rapidly grown to become a leading service provider
+                  specializing in a diverse range of industrial solutions. We
+                  offer expert Roof Fabrication Services, Industrial
+                  Maintenance, and comprehensive Construction Work, catering to
+                  the unique needs of our clients.
                 </p>
 
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum.
+                  With a skilled team and cutting-edge equipment, we ensure
+                  efficient execution of projects of all scales. Vaishnavi
+                  Enterprise continues to evolve, embracing innovation to
+                  deliver excellence in every service we provide.
                 </p>
               </div>
             </div>
@@ -82,19 +82,22 @@ const AboutPage = () => {
 
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum.
+                  At Vaishnavi Enterprise, we specialize in delivering
+                  high-quality construction and industrial services tailored to
+                  meet the evolving needs of our clients. Since our
+                  establishment and GST registration in 2019, we have
+                  consistently built a reputation for excellence across multiple
+                  sectors. Our core expertise lies in industrial roofing, where
+                  we provide durable and weather-resistant solutions for
+                  factories and large-scale facilities. We also offer complete
+                  factory construction services, ensuring safe, efficient, and
+                  fully functional industrial setups.
                 </p>
 
                 <p>
-                  Minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                  nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id
-                  est laborum.
+                  In addition to our industrial capabilities, we provide T.B.
+                  services and advanced waterproofing solutions that protect
+                  structures from long-term damage and environmental exposure.
                 </p>
               </div>
             </div>
@@ -103,7 +106,10 @@ const AboutPage = () => {
 
         {/* Mobile Get In Touch Button */}
         <div className="mt-12 md:hidden flex justify-center">
-          <button className="w-full max-w-sm px-6 py-3 bg-yellow-400 text-gray-800 font-semibold hover:bg-yellow-500 transition-colors duration-200 rounded-lg">
+          <button
+            onClick={() => (window.location.href = "tel:9528982125")}
+            className="w-full max-w-sm px-6 py-3 bg-yellow-400 text-gray-800 font-semibold hover:bg-yellow-500 transition-colors duration-200 rounded-lg"
+          >
             GET IN TOUCH
           </button>
         </div>
@@ -124,7 +130,7 @@ const AboutPage = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-yellow-600">25+</span>
+                <span className="text-2xl font-bold text-yellow-600">5+</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 Years Experience
@@ -136,7 +142,7 @@ const AboutPage = () => {
 
             <div className="text-center">
               <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-yellow-600">500+</span>
+                <span className="text-2xl font-bold text-yellow-600">100+</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 Projects Completed

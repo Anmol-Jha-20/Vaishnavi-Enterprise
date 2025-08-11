@@ -57,12 +57,12 @@ const HomeFeatures = () => {
               <div className="p-5">
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{item.desc}</p>
-                <a
+                {/* <a
                   href="#"
                   className="text-yellow-500 font-bold text-sm hover:underline"
                 >
                   {item.linkText}
-                </a>
+                </a> */}
               </div>
             </article>
           ))}
