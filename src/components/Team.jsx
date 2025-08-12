@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import FounderImage from "../assets/AshishKumar.jpeg";
 import SumitImage from "../assets/sumit.jpeg";
-import AnujImage from "../assets/Anujkumar.jpeg";
+import AnujImage from "../assets/AnujkumarImage.jpeg";
 import AshokKumarImage from "../assets/AshokKumarImage.jpeg";
 
 const TeamSection = () => {
@@ -13,23 +13,23 @@ const TeamSection = () => {
       role: "FOUNDER",
       image: FounderImage,
       description:
-        "Founded in 2019, Vaishnavi Enterprise was established under the vision of ASHISH KUMAR, delivering reliable roof fabrication, industrial maintenance, and construction services.",
+        "Founded in 2019, Vaishnavi Enterprise was established under the vision of ASHISH KUMAR, delivering reliable factory construction,Building construction roof fabrication, industrial maintenance, and construction services.",
     },
     {
       id: 2,
-      name: "SUMIT KUMAR",
-      role: "ACCOUNT",
-      image: SumitImage,
-      description:
-        "Sumit Kumar manages the Accounts division at Vaishnavi Enterprise with precision and professionalism. His expertise ensures smooth financial operations and transparent business practices across all services.",
-    },
-    {
-      id: 3,
       name: "ANUJ KUMAR",
       role: "DIRECTOR",
       image: AnujImage,
       description:
         "Anuj Kumar, the Director of Vaishnavi Enterprise, leads the company with strategic vision and operational excellence.",
+    },
+    {
+      id: 3,
+      name: "SUMIT KUMAR",
+      role: "ACCOUNT",
+      image: SumitImage,
+      description:
+        "Sumit Kumar manages the Accounts division at Vaishnavi Enterprise with precision and professionalism. His expertise ensures smooth financial operations and transparent business practices across all services.",
     },
     {
       id: 4,

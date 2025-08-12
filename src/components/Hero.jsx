@@ -22,7 +22,7 @@ const ConstructionSlider = () => {
       id: 2,
       backgroundImage:
         "url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-      title: "YOUR DREAM HOUSE",
+      title: "YOUR DREAM BUILDING",
       subtitle:
         "If you dream of designing a new home that takes full advantage of the unique geography and views of land that you love",
       buttonText: "OUR SERVICES",
