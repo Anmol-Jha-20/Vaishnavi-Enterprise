@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import FounderImage from "../assets/AshishKumar.jpeg";
 import SumitImage from "../assets/sumit.jpeg";
-import AnujImage from "../assets/AnujkumarImage.jpeg";
+import AnujImage from "../assets/AnujKumarImage.jpeg";
 import AshokKumarImage from "../assets/AshokKumarImage.jpeg";
 
 const TeamSection = () => {
