@@ -18,7 +18,7 @@ import {
   Phone,
   Mail,
 } from "lucide-react";
-import Header from "../Header/Header";
+import Header from "../Header/Header.jsx";
 
 const ResortConstructionPage = () => {
   const keyFeatures = [
@@ -170,7 +170,10 @@ const ResortConstructionPage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105">
+                <button
+                  onClick={() => (window.location.href = "tel:9528982125")}
+                  className="bg-yellow-500 hover:bg-yellow-600 text-white cursor-pointer px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105"
+                >
                   Get Quote <ArrowRight className="w-5 h-5" />
                 </button>
                 {/* <button className="border-2 border-yellow-500 text-yellow-600 hover:bg-yellow-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300">
@@ -374,7 +377,10 @@ const ResortConstructionPage = () => {
             experiences that attract guests and generate lasting returns.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-yellow-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105">
+            <button
+              onClick={() => (window.location.href = "tel:9528982125")}
+              className="bg-white text-yellow-600 hover:bg-gray-100 cursor-pointer px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105"
+            >
               <Phone className="w-5 h-5" />
               Get Free Consultation
             </button>

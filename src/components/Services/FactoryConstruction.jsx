@@ -180,7 +180,10 @@ const FactoryConstructionPage = () => {
                 production and operational requirements.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-300 shadow-lg">
+                <button
+                  onClick={() => (window.location.href = "tel:9528982125")}
+                  className="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-300 shadow-lg"
+                >
                   Get Free Consultation
                 </button>
                 {/* <button className="border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-300">
@@ -359,7 +362,10 @@ const FactoryConstructionPage = () => {
             reality with our expert factory construction services.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-yellow-600 cursor-pointer hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-colors duration-300 shadow-lg">
+            <button
+              onClick={() => (window.location.href = "tel:9528982125")}
+              className="bg-white text-yellow-600 cursor-pointer hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-colors duration-300 shadow-lg"
+            >
               Contact Us Today
             </button>
           </div>

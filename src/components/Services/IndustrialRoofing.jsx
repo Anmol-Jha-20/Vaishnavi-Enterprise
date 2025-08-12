@@ -12,7 +12,8 @@ import {
   Wrench,
   Building,
 } from "lucide-react";
-import Header from "../Header/Header";
+import Header from "../Header/Header.jsx";
+import { useNavigate } from "react-router-dom";
 
 export default function IndustrialRoofingServices() {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -64,6 +65,8 @@ export default function IndustrialRoofingServices() {
     "Galvalume Sheet Installation",
     "Custom Roof Fabrication",
   ];
+
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-white">
@@ -131,11 +134,14 @@ export default function IndustrialRoofingServices() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg"
+                  className="bg-yellow-600 hover:bg-yellow-700 cursor-pointer text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg"
                 >
                   Get Quote Now
                 </button>
-                <button className="border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-50 px-8 py-3 rounded-lg font-semibold transition-colors">
+                <button
+                  onClick={() => navigate("/gallery")}
+                  className="border-2 border-yellow-600 text-yellow-600 cursor-pointer hover:bg-yellow-50 px-8 py-3 rounded-lg font-semibold transition-colors"
+                >
                   View Gallery
                 </button>
               </div>
@@ -288,11 +294,14 @@ export default function IndustrialRoofingServices() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
             <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-white text-yellow-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+              className="bg-white text-yellow-600 cursor-pointer px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
             >
               Get Free Quote
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-yellow-600 px-8 py-3 rounded-lg font-semibold transition-colors">
+            <button
+              onClick={() => (window.location.href = "tel:9528982125")}
+              className="border-2 border-white text-white cursor-pointer hover:bg-white hover:text-yellow-600 px-8 py-3 rounded-lg font-semibold transition-colors"
+            >
               Call Now: +91-95289-82125
             </button>
           </div>

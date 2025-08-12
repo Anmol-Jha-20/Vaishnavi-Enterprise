@@ -148,7 +148,10 @@ const ResidentialConstructionPage = () => {
                 craftsmanship and attention to detail.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-[#F0B100] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors shadow-lg">
+                <button
+                  onClick={() => (window.location.href = "tel:9528982125")}
+                  className="bg-[#F0B100] text-white px-8 py-4 rounded-lg cursor-pointer font-semibold text-lg hover:bg-yellow-600 transition-colors shadow-lg"
+                >
                   Get Free Quote
                 </button>
                 {/* <button className="border-2 border-[#F0B100] text-[#F0B100] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#F0B100] hover:text-white transition-colors">
@@ -315,10 +318,16 @@ const ResidentialConstructionPage = () => {
               quality construction and professional service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-[#F0B100] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors">
+              <button
+                onClick={() => (window.location.href = "tel:9528982125")}
+                className="bg-[#F0B100] text-white px-8 py-4 rounded-lg cursor-pointer font-semibold text-lg hover:bg-yellow-600 transition-colors"
+              >
                 Get Free Consultation
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors">
+              <button
+                onClick={() => (window.location.href = "tel:9528982125")}
+                className="border-2 border-white text-white px-8 py-4 cursor-pointer rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors"
+              >
                 Call Now: +91-95289-82125
               </button>
             </div>

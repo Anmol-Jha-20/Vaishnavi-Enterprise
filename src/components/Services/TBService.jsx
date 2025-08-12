@@ -186,7 +186,10 @@ const TBServicePage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="inline-flex items-center justify-center px-8 py-3 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+                <button
+                  onClick={() => (window.location.href = "tel:9528982125")}
+                  className="inline-flex items-center cursor-pointer justify-center px-8 py-3 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
+                >
                   Get Quote Now
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </button>
@@ -385,11 +388,17 @@ const TBServicePage = () => {
               roof fabrication, industrial maintenance, and construction work.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="inline-flex items-center justify-center px-8 py-4 bg-white text-yellow-700 font-bold rounded-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-200 shadow-lg">
+              <button
+                onClick={() => (window.location.href = "tel:9528982125")}
+                className="inline-flex items-center justify-center cursor-pointer px-8 py-4 bg-white text-yellow-700 font-bold rounded-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-200 shadow-lg"
+              >
                 Get Free Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
-              <button className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-yellow-700 transition-all duration-200">
+              <button
+                onClick={() => (window.location.href = "tel:9528982125")}
+                className="inline-flex items-center cursor-pointer justify-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-yellow-700 transition-all duration-200"
+              >
                 Call: +91-95289-82125
               </button>
             </div>
