@@ -11,7 +11,7 @@ function HomePage() {
   return (
     <>
       <ConstructionSlider />
-      <HomeFeatures />
+      {/* <HomeFeatures /> */}
       {/* <FeaturedWorks /> */}
       <WhatWeDo />
       <ConstructionDesign />

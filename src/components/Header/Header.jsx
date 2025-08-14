@@ -53,6 +53,11 @@ const menuItems = [
         subItems: [],
         link: "/resort-construction",
       },
+      {
+        title: "Warehouse Construction Work",
+        subItems: [],
+        link: "/warehouse-construction",
+      },
     ],
   },
   {

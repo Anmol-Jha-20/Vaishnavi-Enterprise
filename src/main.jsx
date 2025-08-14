@@ -14,6 +14,7 @@ import TBServicePage from "./components/Services/TBService.jsx";
 import WaterproofingServicePage from "./components/Services/WaterproofingService.jsx";
 import ResidentialConstructionPage from "./components/Services/ResidentalService.jsx";
 import ResortConstructionPage from "./components/Services/ResortService.jsx";
+import WarehouseConstructionPage from "./components/Services/WarehouseConstructionWork.jsx";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "/resort-construction",
         element: <ResortConstructionPage />,
+      },
+      {
+        path: "/warehouse-construction",
+        element: <WarehouseConstructionPage />,
       },
     ],
   },
