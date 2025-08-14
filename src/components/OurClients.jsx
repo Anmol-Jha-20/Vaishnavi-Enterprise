@@ -1,9 +1,9 @@
 // import React from "react";
-import jktyreimage from "../assets/jktyre.png";
-import shreecementimage from "../assets/shreecement.png";
+import jktyreimage from "../assets/jktyre.webp";
+import shreecementimage from "../assets/shreecement.webp";
 import waveimage from "../assets/waveimage.jpg";
-import itcimage from "../assets/itcimage.png";
-import campacola from "../assets/campacola.png";
+import itcimage from "../assets/itcimage.webp";
+import campacola from "../assets/campacola.webp";
 
 // const clients = [
 //   {
